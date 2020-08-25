@@ -1,1 +1,53 @@
+body {
+  background: white;
+  color: #323232;
+  margin: 0;
+  height: 100vh;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-family: calibri;
+}
+
+.cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 20%;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+p {
+  -moz-user-select: none;
+  margin-top: 15.5%;
+  text-align: justify;
+  font-size: 5.5vw;
+}
+
+p:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.timer {
+  position: absolute;
+  -moz-user-select: none;
+  font-family: calibri;
+  top: 0;
+  left: 0;
+}
+
+.remove {
+width: 20px;
+height: 20px;
+position: absolute;
+background-color: red;
+bottom: 0;
+right: 0;
+}
