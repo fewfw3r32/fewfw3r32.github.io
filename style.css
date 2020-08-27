@@ -3,11 +3,9 @@ body {
   color: #323232;
   margin: 0;
   height: 100vh;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  
   font-family: calibri;
 }
 
@@ -57,7 +55,11 @@ right: 0;
 width: 15vw;
 height: 15vw;
 position: absolute;
-background-color: red;
+border-radius: 10px;
+background-color: #c6c6c6;
 bottom: 0;
 left: 0;
+border-style: none;
+font-size: 200%;
+padding-bottom: 6px;
 }
