@@ -52,15 +52,15 @@ right: 0;
 }
 
 .roll {
+text-align: center;
 width: 15vw;
 height: 15vw;
+line-height: 15vw;
 position: absolute;
 border-radius: 10px;
 background-color: #c6c6c6;
 bottom: 0;
 left: 0;
-border-style: none;
-font-size: 800%;
-padding-bottom: 24px;
+font-size: 200%;
 -moz-user-select: none;
 }
