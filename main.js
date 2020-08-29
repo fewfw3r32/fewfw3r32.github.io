@@ -36,9 +36,10 @@ window.onload = function() {
                 localStorage.words = JSON.stringify(words);
             };
         } else if (e.target.className == "roll") {
-            roll.innerText = arrows[~~(Math.random() * 3)];
-            setTimeout(function() { roll.style.fontSize = '7vw'; },100);
-            setTimeout(function() { roll.style.fontSize = '8vw'; },200);
+            roll.innerText = '?';
+            setTimeout(function() { roll.innerText = arrows[~~(Math.random() * 3)]; },200);
+            //setTimeout(function() { roll.style.fontSize = '7vw'; },100);
+            //setTimeout(function() { roll.style.fontSize = '8vw'; },200);
         } else {
             pos = ~~(Math.random() * words.length);
             word.innerText = words[pos];
