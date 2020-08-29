@@ -22,15 +22,10 @@ body {
 
 p {
   -moz-user-select: none;
-  margin-top: 43%;
-  text-align: justify;
+  text-align: center;
   font-size: 10vw;
-}
-
-p:after {
-  content: "";
-  display: inline-block;
-  width: 100%;
+  line-height: 95%;
+  margin: 0;
 }
 
 .timer {
