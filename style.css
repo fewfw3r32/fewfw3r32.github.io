@@ -62,4 +62,5 @@ left: 0;
 border-style: none;
 font-size: 800%;
 padding-bottom: 24px;
+-moz-user-select: none;
 }
