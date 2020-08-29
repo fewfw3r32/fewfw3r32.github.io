@@ -55,7 +55,7 @@ window.onload = function() {
             }, 100);
             //setTimeout(function() { roll.style.fontSize = '7vw'; },100);
             //setTimeout(function() { roll.style.fontSize = '8vw'; },200);
-        } else if (e.target.className = "abbr") {
+        } else if (e.target.className == "abbr") {
             abbr.innerText = randLetters();
         } else {
             pos = ~~(Math.random() * words.length);
