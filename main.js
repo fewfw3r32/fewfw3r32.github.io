@@ -19,6 +19,8 @@ window.onload = function() {
             timer.innerText = time;
         }, 1000);
     })();
+
+    var arrows = ['↑', '↓', '→'];
     var words = ['один', 'два', 'три'];
     var pos = ~~(Math.random() * words.length);
     if (!localStorage.words) {
@@ -26,7 +28,7 @@ window.onload = function() {
     };
     words = JSON.parse(localStorage.words);
     word.innerText = words[pos];
-    roll.innerText = ['↑', '↓', '→'][~~(Math.random() * 3)];
+    roll.innerText = arrows[~~(Math.random() * 3)];
     cell.onclick = function(e) {
         if (e.target.className == "remove") {
             if (confirm('Удалить слово?')) {
@@ -34,7 +36,9 @@ window.onload = function() {
                 localStorage.words = JSON.stringify(words);
             };
         } else if (e.target.className == "roll") {
-            roll.innerText = ['↑', '↓', '→'][~~(Math.random() * 3)];
+            roll.innerText = arrows[~~(Math.random() * 3)];
+            setTimeout(function() { roll.style.fontSize = '7vw'; },100);
+            setTimeout(function() { roll.style.fontSize = '8vw'; },200);
         } else {
             pos = ~~(Math.random() * words.length);
             word.innerText = words[pos];
