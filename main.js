@@ -47,6 +47,8 @@ window.onload = function() {
             if (confirm('Удалить слово?')) {
                 words.splice(pos, 1);
                 localStorage.words = JSON.stringify(words);
+                pos = ~~(Math.random() * words.length);
+                word.innerText = words[pos];
             };
         } else if (e.target.className == "roll") {
             roll.innerText = '?';
