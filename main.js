@@ -1,24 +1,22 @@
 window.onload = function() {
 
-    (function() {
-        var time = '';
-        var sec = 0;
-        var min = 0;
-        setInterval(function() {
-            time = '';
-            if (sec === 59) {
-                sec = 0;
-                min++;
-            } else {
-                sec++;
-            };
-            if (min < 10) time = '0';
-            time += min + ':';
-            if (sec < 10) time += '0';
-            time += sec;
-            timer.innerText = time;
-        }, 1000);
-    })();
+    var time = '';
+    var sec = 0;
+    var min = 0;
+    setInterval(function() {
+        time = '';
+        if (sec === 59) {
+            sec = 0;
+            min++;
+        } else {
+            sec++;
+        };
+        if (min < 10) time = '0';
+        time += min + ':';
+        if (sec < 10) time += '0';
+        time += sec;
+        timer.innerText = time;
+    }, 1000);
 
     function randLetters() {
         var letters = 'АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЭЮЯ';
@@ -57,6 +55,10 @@ window.onload = function() {
             }, 100);
             //setTimeout(function() { roll.style.fontSize = '7vw'; },100);
             //setTimeout(function() { roll.style.fontSize = '8vw'; },200);
+        } else if (e.target.className == "timer") {
+            min = 0;
+            sec = 0;
+            timer.innerText = '00:00';
         } else if (e.target.className == "abbr") {
             abbr.innerText = randLetters();
         } else {
