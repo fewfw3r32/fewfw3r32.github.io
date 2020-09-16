@@ -6,7 +6,7 @@ function start() {
     frameset.setAttribute('cols', '50%, 50%');
 
     one.src = 'http://nekto.me/chat';
-    two.src = 'https://chatvdvoem.ru/';
+    two.src = 'https://chatvdvoem.ru';
 
     frameset.appendChild(one);
     frameset.appendChild(two);
